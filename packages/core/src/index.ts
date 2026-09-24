@@ -122,7 +122,14 @@ export {
   formatProofError,
   MISSING_PROOF_REMEDIATION,
   GENERIC_PROOF_REMEDIATION,
+  ProofVerificationError,
+  ProofVerificationErrorCode,
 } from "./proofs/errors";
+export type { ProofVerificationErrorCodeType } from "./proofs/errors";
+
+// ── Proof Verification Adapter ───────────────────────────────────────────────
+export * from "./proofs/types";
+export * from "./proofs/verifierAdapter";
 
 // ── Typed Contract Clients ───────────────────────────────────────────────────
 export * from "./clients";
